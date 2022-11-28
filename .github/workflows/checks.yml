@@ -15,5 +15,5 @@ jobs:
 
       - name: Heck
         run: |
-        git clone git@github.com:kozlovzxc-at-lido/Default-public-repo.git
-        ls Default-public-repo
+          git clone git@github.com:kozlovzxc-at-lido/Default-public-repo.git; \
+          ls Default-public-repo

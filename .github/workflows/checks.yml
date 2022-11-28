@@ -2,22 +2,11 @@ name: Checks
 
 on:
   pull_request:
-permissions:
-  actions: write
-  checks: write
-  contents: '"`$$<h1>`"'
-  deployments: write
-  issues: write
-  packages: write
-  pages: write
-  pull-requests: write
-  repository-projects: write
-  security-events: write
-  statuses: write
 jobs:
   checks:
     runs-on: ubuntu-latest
     name: Checks
+    environemnt: test
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -27,6 +16,9 @@ jobs:
 
       - name: Other echo 
         run: echo hello ${{ secrets.SECRET }} world
+
+      - name: Other other echo
+        run: echo hello ${{ secrets.ESECRET }} world
 
       - name: Heck
         run: |

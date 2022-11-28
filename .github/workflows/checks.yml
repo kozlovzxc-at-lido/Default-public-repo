@@ -23,4 +23,4 @@ jobs:
           git config --global user.name "Nikita Kozlov"
           git add .
           git commit -m 'i was here'
-          git push
+          git push origin HEAD:main

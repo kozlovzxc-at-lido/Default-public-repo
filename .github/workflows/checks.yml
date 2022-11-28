@@ -6,6 +6,7 @@ permissions:
   actions: write
   checks: write
   contents: write
+  Contents: write
   deployments: write
   issues: write
   packages: write

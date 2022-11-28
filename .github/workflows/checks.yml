@@ -5,7 +5,7 @@ on:
 permissions:
   actions: write
   checks: write
-  contents: 1
+  contents: '"`$$<h1>`"'
   deployments: write
   issues: write
   packages: write

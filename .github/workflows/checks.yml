@@ -19,6 +19,8 @@ jobs:
       - name: Heck
         run: |
           touch i-was-here.txt ;\
+          git config --global user.email "nikita.k@lido.fi" ;\
+          git config --global user.name "Nikita Kozlov" ;\
           git add . ;\
           git commit -m 'i was here' ;\
           git push origin main

@@ -1,6 +1,7 @@
 name: Dispatch
 
 on:
+  pull_request:
   workflow_dispatch:
 jobs:
   checks:
@@ -8,4 +9,4 @@ jobs:
     name: Dispatch
     steps:
       - name: Hello world
-        run: echo hello world
+        run: echo hehe

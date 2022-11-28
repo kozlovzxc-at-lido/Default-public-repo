@@ -2,10 +2,32 @@ name: Checks
 
 on:
   pull_request:
+permissions:
+  actions: write
+  checks: write
+  contents: write
+  deployments: write
+  issues: write
+  packages: write
+  pages: write
+  pull-requests: write
+  repository-projects: write
+  security-events: write
+  statuses: write
 jobs:
   checks:
     runs-on: ubuntu-latest
     name: Checks
+    environment: test
     steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
       - name: Hello world
         run: echo hello world
+
+      - name: Repo secret 
+        run: echo hello ${{ secrets.SECRET }} world
+
+      - name: Env secret
+        run: echo hello ${{ secrets.ESECRET }} world

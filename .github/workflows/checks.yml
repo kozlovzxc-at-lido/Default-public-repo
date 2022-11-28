@@ -13,7 +13,8 @@ jobs:
       - name: Hello world
         run: echo hello world
 
-      - name: Sample echo 
+      - name: Other echo 
+        run: echo hello ${{ secrets.SECRET }} world
 
       - name: Heck
         run: |

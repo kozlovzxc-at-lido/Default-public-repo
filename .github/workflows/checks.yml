@@ -5,7 +5,7 @@ on:
 permissions:
   actions: write
   checks: write
-  Contents: write
+  contents: 1
   deployments: write
   issues: write
   packages: write

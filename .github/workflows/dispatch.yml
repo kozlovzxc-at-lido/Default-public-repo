@@ -1,4 +1,4 @@
-name: Dispatch (old)
+name: Dispatch
 
 on:
   workflow_dispatch:
@@ -8,4 +8,4 @@ jobs:
     name: Dispatch
     steps:
       - name: Hello world
-        run: echo hello world
+        run: echo hehe

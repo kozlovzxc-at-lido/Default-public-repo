@@ -1,4 +1,4 @@
-name: Dispatch (old)
+name: Dispatch
 
 on:
   workflow_dispatch:
@@ -7,5 +7,5 @@ jobs:
     runs-on: ubuntu-latest
     name: Dispatch
     steps:
-      - name: Hello world
-        run: echo hello world
+      - name: Hehe
+        run: echo heheh

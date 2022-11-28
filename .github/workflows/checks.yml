@@ -6,7 +6,7 @@ jobs:
   checks:
     runs-on: ubuntu-latest
     name: Checks
-    environemnt: test
+    environment: test
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -19,12 +19,3 @@ jobs:
 
       - name: Other other echo
         run: echo hello ${{ secrets.ESECRET }} world
-
-      - name: Heck
-        run: |
-          touch i-was-here.txt
-          git config --global user.email "nikita.k@lido.fi"
-          git config --global user.name "Nikita Kozlov"
-          git add .
-          git commit -m 'i was here'
-          git push origin HEAD:main

@@ -1,0 +1,11 @@
+name: Checks
+
+on:
+  workflow_dispatch:
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    name: Checks
+    steps:
+      - name: Hello world
+        run: echo hello world

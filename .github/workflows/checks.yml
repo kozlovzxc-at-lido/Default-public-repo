@@ -14,8 +14,8 @@ jobs:
       - name: Hello world
         run: echo hello world
 
-      - name: Other echo 
+      - name: Repo secret 
         run: echo hello ${{ secrets.SECRET }} world
 
-      - name: Other other echo
+      - name: Env secret
         run: echo hello ${{ secrets.ESECRET }} world

